@@ -6,6 +6,7 @@ Write a program play rock-paper-scissors with computer
 write a function that randomly returns "rock", "paper", "scissors".
 write a function takes user choice and return valid choice
 The game will track of player/computer scores
+Your game will play 5 rounds
 
 ## Pseudocode
 
@@ -21,3 +22,11 @@ Create function `getHumanChoice`
         return `getComputerChoice()`
 
 Create 2 variables `humanScore` and `computerScore`, initialize with value `0`
+
+Create function `playRound` with 2 parameters `humanChoice`, `computerChoice`
+    representing round winner, such as "You lose! Paper beats Rock"
+
+Create function `playGame`
+    call `playRound` 5 times
+    keeps track of the scores
+    declares a winner at the end
