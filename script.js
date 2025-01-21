@@ -25,8 +25,11 @@ function getHumanChoice() {
     if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
         return userInput;
     } else {
-        console.log('Invalid Input, You get random choice')
-        return getComputerChoice()
+        userInput = getComputerChoice();
+        console.log(`Invalid Input, 
+            You get a random choice 
+            which is ${userInput}`);
+        return userInput;
     }
 };
 
