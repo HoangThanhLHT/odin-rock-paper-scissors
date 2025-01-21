@@ -3,7 +3,7 @@
 
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
-    console.log(randomNumber);
+    // console.log(randomNumber);
     let choice;
     // console.log(choice);
     if (randomNumber === 0) {
@@ -17,4 +17,21 @@ function getComputerChoice() {
 };
 
 // test function getComputerChoice
-console.log(getComputerChoice());
+// console.log(getComputerChoice());
+
+function getHumanChoice() {
+    let userInput = prompt('Enter your choice (rock, paper, scissors)').toLowerCase()
+    // console.log(userInput)
+    if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors') {
+        return userInput;
+    } else {
+        console.log('Invalid Input, You get random choice')
+        return getComputerChoice()
+    }
+};
+
+// console.log(getHumanChoice())
+
+// Create 2 variables to keep track of scores
+let humanScore = 0;
+let computerScore = 0;
